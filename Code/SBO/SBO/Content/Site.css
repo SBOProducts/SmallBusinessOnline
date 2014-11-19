@@ -1,4 +1,4 @@
-﻿* {
+﻿body, div, header, nav, article, footer, aside {
     margin: 0;
     padding: 0;
 }
@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5 {
 header {
     background-color:#575757;
 }
+
+    header ul {
+        margin: 0;
+    }
 
 
 nav#MainNav {
@@ -85,17 +89,18 @@ article {
     article aside {
         float:right;
         width:300px;
-        border:1px solid #F26522;
+        border:1px solid #8EC0FD;
         -moz-border-radius: 3px;
         border-radius: 5px;
         
     }
 
         article aside h2 {
-            background-color:#F26522;
+            background-color: #8EC0FD;
             text-align:center;
             padding:5px;
             color:#fff;
+            margin:0;
         }
 
 
