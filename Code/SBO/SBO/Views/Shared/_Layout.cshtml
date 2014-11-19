@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - Small Business Online</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="icon" href="~/favicon.ico?v=2" type="image/x-icon">
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+
+        <header>
+            <a href="@Url.Action("Index", "Home")" id="LogoLink">
+                <img src="@Url.Content("~/Images/Logo.jpg")" alt="Small Business Online" />
+            </a>
+            @Html.Partial("_MainNav")
+            <div style="clear:both;"></div>
+        </header>
+        <article>
+            @RenderBody()
+        </article>
+        
+        <footer>
+            <div class="panel">
+                <div class="TagLine">
+                    <h4>Small Business Online</h4>
+                </div>
+                <div class="Copyright">
+                    © @DateTime.Now.Year Small Business Online, LLC
+                </div>
+            </div>
+        </footer>
+        
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

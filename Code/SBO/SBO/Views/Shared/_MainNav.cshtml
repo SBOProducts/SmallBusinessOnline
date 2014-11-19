@@ -1,0 +1,17 @@
+﻿@{
+    string url = Request.Url.PathAndQuery.ToString();
+    bool Home = url == "/";
+    bool About = url.StartsWith("/Home/About");
+    bool Contact = url.StartsWith("/Home/Contact");
+    bool Products = url.StartsWith("/Products");
+    bool Services = url.StartsWith("/Services");
+}
+<nav id="MainNav">
+    <ul>
+        <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = Home ? "selected" : "" })</li>
+        <li>@Html.ActionLink("Products", "Index", "Products", null, new { @class = Products ? "selected" : "" })</li>
+        <li>@Html.ActionLink("Services", "Index", "Services", null, new { @class = Services ? "selected" : "" })</li>
+        <li>@Html.ActionLink("About", "About", "Home", null, new { @class = About ? "selected" : "" })</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = Contact ? "selected" : "" })</li>
+    </ul>
+</nav>
