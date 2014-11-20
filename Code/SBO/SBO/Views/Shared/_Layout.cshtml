@@ -18,7 +18,15 @@
             @Html.Partial("_MainNav")
             <div style="clear:both;"></div>
         </header>
-        <article>
+
+        <div class="texture">
+            <article id="TopBanner">
+                @RenderSection("PageBanner", required: false)
+            </article>
+        </div>
+        
+
+        <article id="MainContent">
             @RenderBody()
         </article>
         

@@ -9,14 +9,20 @@ body {
     min-width:452px;
     background-color:#fff;
     font-family:Helvetica,Arial,sans-serif;
+    
 }
 
 
 /* HTML ELEMENTS
 - - - - - - - - - - - - - - - - - - - - - - - - - */
-h1, h2, h3, h4, h5 {
-    color: #555;
-}
+h1 { font-size:2.0em; color: #F26522; }
+h2 { font-size:1.8em; color: #107E9D; }
+h3 { font-size:1.6em; color: #555; }
+h4 { font-size:1.4em; color: #555; }
+h5 { font-size:1.2em; color: #555; }
+
+
+
 
 
 /* CLASS DEFINITIONS
@@ -24,6 +30,27 @@ h1, h2, h3, h4, h5 {
 .panel {
     padding:10px;
 }
+
+.texture {
+    background-image:url('/Images/texture.jpg');
+}
+
+.two-panels {
+    clear:both;
+}
+
+.two-panels div:nth-child(1) {
+    width:48%;
+    float:left;
+}
+
+.two-panels div:nth-child(2) {
+    width:48%;
+    float:right;
+}
+
+.clear { clear: both; }
+
 
 /* HEADER
 - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -75,17 +102,54 @@ nav#MainNav ul li a.selected {
 
 
 
+
+
+
+
+
+
+
 /* ARTICLE
 - - - - - - - - - - - - - - - - - - - - - - - - - */
 article {
-    margin:20px auto 120px auto;
-    padding:20px;
     max-width:900px;
-    background-color:#fff;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    
+    margin:0 auto 0 auto;
+    padding:20px;
 }
+
+#TopBanner { }
+    #TopBanner h1 { text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.42); }
+    #TopBanner h4 { text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.42); }
+
+#MainContent {
+    margin:20px auto 120px auto;
+}
+
+    #MainContent aside {
+        float:right;
+        width:400px;
+        margin-top:-66px;
+    }
+
+        #MainContent aside h3 {
+            background-color: #F26522;
+            color:#fff;
+            padding:8px;
+            text-align:center;
+            -moz-border-radius-bottomleft: 75px;
+            -moz-border-radius-bottomright:75px;
+            -webkit-border-bottom-left-radius:75px;
+            -webkit-border-bottom-right-radius:75px;
+            border-bottom-left-radius:75px;
+            border-bottom-right-radius:75px;
+
+        }
+
+
+
+
+
+
 
 
 
@@ -94,13 +158,15 @@ article {
 - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-    background-color:#575757;
-    color:#fff;
-    font-family:Helvetica,Arial,sans-serif;
-    position:fixed;
-    width:100%;
-    bottom:0;
+    background-color: #575757;
+    color: #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    /*position: fixed;
+    width: 100%;
+    bottom: 0;
+    */
 }
+
 
 footer h4 {
     color: #fff;
