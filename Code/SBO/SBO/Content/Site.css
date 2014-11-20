@@ -17,12 +17,27 @@ body {
 - - - - - - - - - - - - - - - - - - - - - - - - - */
 h1 { font-size:2.0em; color: #F26522; }
 h2 { font-size:1.8em; color: #107E9D; }
-h3 { font-size:1.6em; color: #555; }
-h4 { font-size:1.4em; color: #555; }
-h5 { font-size:1.2em; color: #555; }
+h3 { font-size:1.4em; color: #555; }
+h4 { font-size:1.2em; color: #555; }
+h5 { font-size:1.0em; color: #555; }
 
 
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
 
 
 /* CLASS DEFINITIONS
@@ -127,7 +142,7 @@ article {
 
     #MainContent aside {
         float:right;
-        width:400px;
+        width:440px;
         margin-top:-66px;
     }
 
