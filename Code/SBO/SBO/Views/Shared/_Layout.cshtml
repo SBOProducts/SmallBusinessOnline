@@ -3,11 +3,18 @@
     <head>
         <meta charset="utf-8" />
         <title>@ViewBag.Title - Small Business Online</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        
         <link rel="icon" href="~/favicon.ico?v=2" type="image/x-icon">
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
+
+        @Styles.Render("~/Content/foundation/css")
+
+        @RenderSection("head", required: false)
         @Scripts.Render("~/bundles/modernizr")
+
+        @Styles.Render("~/Content/css")
     </head>
     <body>
 
@@ -18,10 +25,9 @@
             @Html.Partial("_MainNav")
             <div style="clear:both;"></div>
         </header>
-        <div class="texture">
-            <article id="TopBanner">
-                @RenderSection("PageBanner", required: false)
-            </article>
+
+        <div id="PageBanner" class="texture">
+            @RenderSection("PageBanner", required: false)
         </div>
 
         <article id="MainContent">
@@ -29,18 +35,21 @@
         </article>
         
         <footer>
-            <div class="panel">
-                <div class="TagLine">
-                    <h4>Small Business Online</h4>
-                </div>
-                <div class="Copyright">
-                    © @DateTime.Now.Year Small Business Online, LLC
-                </div>
+            <div class="TagLine">
+                <h4>Small Business Online</h4>
+            </div>
+            <div class="Copyright">
+                © @DateTime.Now.Year Small Business Online, LLC
             </div>
         </footer>
         
-
         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/foundation")
+
+        <script>
+            $(document).foundation();
+        </script>
+
         @RenderSection("scripts", required: false)
     </body>
 </html>
