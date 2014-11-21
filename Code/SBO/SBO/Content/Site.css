@@ -1,4 +1,4 @@
-﻿body, div, header, nav, article, footer, aside {
+﻿body, div, header, nav, article, footer, aside, section {
     margin: 0;
     padding: 0;
 }
@@ -54,18 +54,18 @@ blockquote:before {
     clear:both;
 }
 
-.two-panels div:nth-child(1) {
+.two-panels >*:nth-child(1) {
     width:48%;
     float:left;
 }
 
-.two-panels div:nth-child(2) {
+.two-panels >*:nth-child(2) {
     width:48%;
     float:right;
 }
 
 .clear { clear: both; }
-
+.center { text-align: center; }
 
 /* HEADER
 - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -129,26 +129,33 @@ nav#MainNav ul li a.selected {
 article {
     max-width:900px;
     margin:0 auto 0 auto;
-    padding:20px;
+
 }
 
-#TopBanner { }
+#TopBanner { 
+    padding:20px;
+}
     #TopBanner h1 { text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.42); }
     #TopBanner h4 { text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.42); }
 
 #MainContent {
-    margin:20px auto 120px auto;
+    margin:0px auto 60px auto;
+
 }
 
     #MainContent aside {
+        /*
         float:right;
-        width:440px;
-        margin-top:-66px;
+        width:400px;
+        padding: 0 20px 20px 20px;
+        margin-left:20px;
+        */
     }
 
         #MainContent aside h3 {
             background-color: #F26522;
             color:#fff;
+            margin-top:0;
             padding:8px;
             text-align:center;
             -moz-border-radius-bottomleft: 75px;
@@ -160,7 +167,9 @@ article {
 
         }
 
-
+    #MainContent section {
+        
+    }
 
 
 
