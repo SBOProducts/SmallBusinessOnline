@@ -6,6 +6,10 @@
     bool Products = url.StartsWith("/Products");
     bool Services = url.StartsWith("/Services");
 }
+<a href="@Url.Action("Index", "Home")" id="LogoLink">
+    <img src="@Url.Content("~/Images/Logo.jpg")" alt="Small Business Online" />
+</a>
+
 <nav id="MainNav">
     <ul>
         <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = Home ? "selected" : "" })</li>
@@ -15,3 +19,5 @@
         <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = Contact ? "selected" : "" })</li>
     </ul>
 </nav>
+
+<div style="clear:both;"></div>

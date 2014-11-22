@@ -4,7 +4,8 @@
 
 
 @section PageBanner{
-    <div class="row">
+    
+    <div id="PageBanner" class="row">
         <div class="large-6 columns">
             <h1>Web Design and Development</h1>
             <h4>
@@ -12,7 +13,9 @@
             </h4>
         </div>
         <div class="large-6 columns">
-            <img src="@Url.Content("~/Images/responsive-design.png")" alt="Responsive Design" />
+            <a href="@Url.Action("TrailerOnline", "Products")">
+                <img src="@Url.Content("~/Images/responsive-design.png")" alt="Responsive Design" />
+            </a>
         </div>
     </div>
 }
@@ -23,31 +26,77 @@
 
 <div class="row">
 
-    <div class="large-6 large-push-6 columns product">
-        <h3>★ ★ ★ Trailer Online ★ ★ ★</h3>
-        <p>
-            Trailer Online is a website designed for promoting auto or trailer inventory online. We give you an entire month
-            to use the website without any limitations. You can keep any updates you make during the trial. 
-        </p>
-        <ul>
-            <li>The first month is free with no limitations</li>
-            <li>Use your own domain name</li>
-            <li>Works on all devices including phones and tablets</li>
-        </ul>
-        <h5 class="center">Customer Testimonials</h5>
-        <blockquote>
-            Trailer Online is easy to use and has served my business well over the past 4 years. 
-            <p>Stan Brower, <a href="http://broweronline.com">Brower Online</a></p>
-        </blockquote>
+    <div class="large-6 large-push-6 columns">
+        <h3 class="product-title">★ ★ Trailer Online ★ ★</h3>
+        <div class="pad">
+            <p>
+                Trailer Online is a simple and affordable website for displaying your auto or trailer inventory online. 
+            </p>
+            <ul>
+                <li>Incredibly easy to use</li>
+                <li>30-day free trial</li>
+                <li>We have the best prices on the market</li>
+                <li>@Html.ActionLink("Read More...", "TrailerOnline", "Products")</li>
+            </ul>
+            <p>See what others are saying, and visit their websites below.</p>
+            <blockquote>
+                Trailer Online is easy to use and has served my business well over the past 4 years. 
+                <p>Stan, <a target="_blank" href="http://broweronline.com">Brower Online, Bradenton FL</a></p>
+            </blockquote>
+            <blockquote>
+                I don't know much about computers, but I knew we needed a website. Small Business Online
+                was very patient and easy to work with.
+                <p>Jake, <a target="_blank" href="http://capitaltrailerhelena.com">Capital Trailer, Helena MT</a></p>
+            </blockquote>
+        </div>
     </div>
     
 
     <div class="large-6 large-pull-6 columns pad">
         <h2>Small Business Online</h2>
         <p>
-            Small Business Online specializes in developing robust software solutions for small business and government agencies. 
-
+            We specialize in developing software for small business and government agencies. 
+            Our experienced staff will assist you at any point along your project from concept ideation to installing software on servers. 
         </p>
+        
+        <h3>Our Mission</h3>
+        <p>
+            We strive to create high-quality software to solve complex business problems while remaining within budget and time constraints.
+        </p>
+
+        <h3>Our Process</h3>
+        <p>
+            We keep costs down and quality high by following an agile project methodology. 
+        </p>
+
+        <h4>Envision</h4>
+        <p>
+            Project are conceived from visions of the future. Understanding that vision is critical to the success of your project.
+        </p>
+
+        <h4>Design</h4>
+        <p>
+            Graphic designers and html developers work with you to create a semi-functional prototype of the website. 
+            The website looks finished, but it does not manage data. 
+        </p>
+
+        <h4>Develop</h4>
+        <p>
+            Programmers add code to the prototype bring the screens to life with real data and business rules. 
+        </p>
+        
+        <h4>Deploy</h4>
+        <p>
+            The functional website is deployed to hosting servers, and your project is completed.
+        </p>
+
+        <h4>Support</h4>
+        <p>
+            The developers who created the solution are available to fix bugs or make enhancements.
+        </p>
+        
+
+        @*
         <h3>Services</h3>
         <ul>
             <li>System architecture</li>
@@ -65,6 +114,7 @@
             <li>Windows Hosting, Microsoft Azure Cloud</li>
 
         </ul>
+        *@
     </div>
 
 </div>

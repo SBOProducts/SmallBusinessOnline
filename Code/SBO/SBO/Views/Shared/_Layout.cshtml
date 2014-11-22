@@ -19,14 +19,14 @@
     <body>
 
         <header>
-            <a href="@Url.Action("Index", "Home")" id="LogoLink">
-                <img src="@Url.Content("~/Images/Logo.jpg")" alt="Small Business Online" />
-            </a>
-            @Html.Partial("_MainNav")
-            <div style="clear:both;"></div>
+            @if(Request.Browser.IsMobileDevice) {
+                @Html.Partial("_MainNavResponsive")
+            } else {
+                @Html.Partial("_MainNavLarge")
+            }
         </header>
 
-        <div id="PageBanner" class="texture">
+        <div class="texture">
             @RenderSection("PageBanner", required: false)
         </div>
 
@@ -39,7 +39,7 @@
                 <h4>Small Business Online</h4>
             </div>
             <div class="Copyright">
-                © @DateTime.Now.Year Small Business Online, LLC
+                ©@DateTime.Now.Year Small Business Online
             </div>
         </footer>
         

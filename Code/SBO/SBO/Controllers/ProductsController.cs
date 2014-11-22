@@ -13,5 +13,10 @@ namespace SBO.Web.Controllers
             return View();
         }
 
+        public ActionResult TrailerOnline()
+        {
+            return View();
+        }
+
     }
 }

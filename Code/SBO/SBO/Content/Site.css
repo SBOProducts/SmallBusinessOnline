@@ -57,6 +57,25 @@ blockquote:before {
 
 .pad { padding: 20px; }
 
+.nospace { padding: 0; margin: 0; } 
+
+.product-title {
+    background-color: #F26522;
+    color:#fff;
+    margin:0;
+    padding:5px;
+    text-align:center;
+    -moz-border-radius-bottomleft: 75px;
+    -moz-border-radius-bottomright:75px;
+    -webkit-border-bottom-left-radius:75px;
+    -webkit-border-bottom-right-radius:75px;
+    border-bottom-left-radius:75px;
+    border-bottom-right-radius:75px;
+    white-space: nowrap;
+    border-bottom:3px dotted #fff;
+
+}
+
 /* HEADER
 - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -123,20 +142,7 @@ nav#MainNav ul li a.selected:hover { color: #fff; }
 
 
 
-.product h3 {
-    background-color: #F26522;
-    color:#fff;
-    margin-top:0;
-    text-align:center;
-    -moz-border-radius-bottomleft: 75px;
-    -moz-border-radius-bottomright:75px;
-    -webkit-border-bottom-left-radius:75px;
-    -webkit-border-bottom-right-radius:75px;
-    border-bottom-left-radius:75px;
-    border-bottom-right-radius:75px;
-    white-space: nowrap;
 
-}
 
 
 
