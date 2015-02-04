@@ -5,6 +5,7 @@
     bool Contact = url.StartsWith("/Home/Contact");
     bool Products = url.StartsWith("/Products");
     bool Services = url.StartsWith("/Services");
+    bool Projects = url.StartsWith("/Projects");
 }
 
 <nav class="top-bar" data-topbar role="navigation">
@@ -24,6 +25,7 @@
         <li @if(Home){<text>class="active"</text>}>@Html.ActionLink("Home", "Index", "Home")</li>
         <li @if (Products){<text>class="active"</text>}>@Html.ActionLink("Products", "Index", "Products")</li>
         <li @if(Services){<text>class="active"</text>}>@Html.ActionLink("Services", "Index", "Services")</li>
+        <li @if(Projects){<text>class="active"</text>}>@Html.ActionLink("Projects", "Index", "Projects")</li>
         <li @if(About){<text>class="active"</text>}>@Html.ActionLink("About", "About", "Home")</li>
         <li @if(Contact){<text>class="active"</text>}>@Html.ActionLink("Contact", "Contact", "Home")</li>
     </ul>

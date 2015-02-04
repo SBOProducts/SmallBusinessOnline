@@ -19,11 +19,7 @@
     <body>
 
         <header>
-            @if(Request.Browser.IsMobileDevice) {
-                @Html.Partial("_MainNavResponsive")
-            } else {
-                @Html.Partial("_MainNavLarge")
-            }
+            @Html.Partial("_MainNavResponsive")
         </header>
 
         <div class="texture">

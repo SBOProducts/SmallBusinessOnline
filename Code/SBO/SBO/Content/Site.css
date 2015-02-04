@@ -8,7 +8,6 @@ html {
 body {
     background-color:#fff;
     font-family:Helvetica,Arial,sans-serif;
-    
 }
 
 /*
@@ -16,8 +15,9 @@ body {
     BRIGHT BLUE:    #107E9D
     ORANGE:         #F26522
     GRAY:           #575757    
-    
 */
+
+.background-1 { background-color: #B3C7CE; }
 
 
 /* HTML ELEMENTS

@@ -1,5 +1,28 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Products";
 }
 
-<h2>Index</h2>
+
+<div class="row">
+    <section class="medium-6 small-12 columns">
+        <h3>Trailer Online</h3>
+        <a href="@Url.Action("TrailerOnline", "Products")">
+            <img src="@Url.Content("~/Images/responsive-design.png")" alt="Responsive Design" />
+        </a>
+    </section>
+    <section class="medium-6 small-12 columns">
+        <h3>Dalapi</h3>
+        <a href="@Url.Action("Dalapi", "Products")">
+            <img src="@Url.Content("~/Images/Dalapi.png")" alt="Dalapi - Data Access Layer API" />
+        </a>
+    </section>
+</div>
+
+<div class="row">
+    <section class="medium-6 small-12 columns">
+        <h3></h3>
+    </section>
+    <section class="medium-6 small-12 columns">
+
+    </section>
+</div>
