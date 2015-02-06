@@ -17,7 +17,7 @@ body {
     GRAY:           #575757    
 */
 
-.background-1 { background-color: #B3C7CE; }
+.background-1 { background-color: #60BDFF; border-top:1px dashed #fff; border-bottom:1px dashed #fff; }
 
 
 /* HTML ELEMENTS
